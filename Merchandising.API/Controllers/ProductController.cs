@@ -24,7 +24,6 @@ public class ProductController : ControllerBase
         return Ok(products);
     }
 
-
     [HttpGet("filter")]
     public IActionResult Filter([FromQuery] FilterProductRequestVM requestVM)
     {
