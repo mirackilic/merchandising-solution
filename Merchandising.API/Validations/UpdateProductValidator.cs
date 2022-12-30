@@ -9,6 +9,5 @@ public class UpdateProductValidator : AbstractValidator<UpdateProductRequestVM>
     {
         RuleFor(x => x.Id).NotNull();
         RuleFor(x => x.Title).NotEmpty().MaximumLength(200);
-        RuleFor(x => x.CategoryId).NotNull();
     }
 }

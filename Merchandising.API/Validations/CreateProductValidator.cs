@@ -8,6 +8,5 @@ public class CreateProductValidator : AbstractValidator<CreateProductRequestVM>
     public CreateProductValidator()
     {
         RuleFor(x => x.Title).NotEmpty().MaximumLength(200);
-        RuleFor(x => x.CategoryId).NotNull();
     }
 }
