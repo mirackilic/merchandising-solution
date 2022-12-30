@@ -1,0 +1,5 @@
+# Add Migration
+dotnet ef migrations add -s Merchandising.API -p Merchandising.Domain <Desciprion>
+
+# Update Databse
+dotnet ef database update -s Merchandising.API -p Merchandising.Domain
